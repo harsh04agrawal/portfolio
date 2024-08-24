@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- Link to Google Fonts and Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <div class="left">
+        <a href="#about">About</a>
+      </div>
+      <div class="right">
+        <a href="https://github.com/harsh04agrawal" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/harsh04agrawal/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:harshagrawal845@gmail.com" class="cta"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+      <div class="nav-toggle">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECTION 1: Hero -->
+  <section id="about" class="hero-section">
+    <div class="text">
+      <h2>Hi, I'm Harsh 👋</h2>
+      <p>"I'm a third-year Computer Science student with a strong foundation in programming, algorithms, and software development. I'm passionate about applying my technical skills to solve real-world problems and am eager to continue expanding my knowledge in areas like AI, data science, and cybersecurity."</p>
+
+      <div class="links">
+        <a href="#skills">
+          <i class="fa-solid fa-code"></i>
+          <span>Skills</span>
+        </a>
+
+        <a href="#education">
+          <i class="fa-solid fa-pen"></i>
+          <span>Education</span>
+        </a>
+
+        <a href="#personal-project">
+          <i class="fa-solid fa-folder-open"></i>
+          <span>Personal Project</span>
+        </a>
+
+        <a href="#positions-of-responsibility">
+          <i class="fa-solid fa-user-tie"></i>
+          <span>Positions of Responsibility</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="headshot">
+      <img src="images\harsh.jpeg" alt="Harsh Agrawal headshot">
+    </div>
+  </section>
+
+  <!-- SECTION 2: Skills -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="text">
+      I am proficient in CSS, HTML, and JavaScript, with experience in building responsive web applications. My skill set includes working with Node.js for server-side development and React.js for creating dynamic user interfaces. I am passionate about crafting efficient and user-friendly solutions.
+    </div>
+
+    <div class="cells">
+      <div class="cell">
+        <img src="images\html-logo.webp" alt="HTML logo">
+        <span>HTML</span>
+      </div>
+
+      <div class="cell">
+        <img src="images\css-logo.webp" alt="CSS logo">
+        <span>CSS</span>
+      </div>
+
+      <div class="cell">
+        <img src="images\javascript-logo.webp" alt="JavaScript logo">
+        <span>JavaScript</span>
+      </div>
+
+      <div class="cell">
+        <img src="images\node-logo.webp" alt="Node.js logo">
+        <span>Node.js</span>
+      </div>
+
+      <div class="cell">
+        <img src="images\react-logo.webp" alt="React.js logo">
+        <span>React.js</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Education -->
+  <section id="education" class="education-section">
+    <h2>Education</h2>
+
+    <div class="education-item">
+      <div class="education-details">
+        <p><strong>Symbiosis Institute of Technology, Pune</strong></p>
+        <p>B.Tech in Computer Science and Engineering</p>
+      </div>
+      <div class="education-right">
+        <p>2022 – 2026</p>
+        <p>CGPA: 7.57</p>
+      </div>
+    </div>
+
+    <div class="education-item">
+      <div class="education-details">
+        <p><strong>Symbiosis Institute of Business Management, Pune</strong></p>
+        <p>Diploma in Business Management</p>
+      </div>
+      <div class="education-right">
+        <p>2023 – 2024</p>
+        <p>CGPA: 7.54</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Personal Projects -->
+  <section id="personal-project" class="projects-section">
+    <h2>Personal Project</h2>
+
+    <div class="project-item">
+      <div class="project-header">
+        <p><strong>Face Recognition for Mess Entry</strong></p>
+        <p class="project-dates"><em>Jan 2024 - May 2024</em></p>
+      </div>
+      <ul class="project-details">
+        <li>The mess entry process has been revolutionized by the Automated Mess Entry Authorization System – powered by advanced facial recognition technology harnessed by AWS Rekognition.</li>
+        <li>Upon capture, the system verifies the identity of the person through highly accurate facial recognition algorithms.</li>
+        <li>Technology Used: Python, AWS Services, AWS Cognito, DynamoDB, HTML.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Positions of Responsibility -->
+  <section id="positions-of-responsibility" class="positions-section">
+    <h2>Positions of Responsibility</h2>
+
+    <div class="position-item">
+      <div class="position-header">
+        <p><strong>On Desk Event Coordinator</strong></p>
+        <p class="position-organization">Entrepreneurship Promotion Innovation Cell - SIT Pune</p>
+        <p class="position-dates">Mar 2024 – Present</p>
+      </div>
+      <ul class="position-details">
+        <li>Helped to organize events and ensured everything went smoothly.</li>
+        <li>Successfully arranged 5 events till date.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION: Last Updated -->
+<section id="last-updated" class="last-updated-section">
+  <p>Last updated: <span id="update-date">23/08/24</span></p>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
