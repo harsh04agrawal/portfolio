@@ -35,10 +35,6 @@ nav a:hover {
   color: #f5c518;
 }
 
-nav:hover {
-  background-color: #0f3460;
-}
-
 .nav-toggle {
   display: none;
 }
@@ -308,25 +304,36 @@ nav:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
   nav a {
-    display: block;
-    margin: 0.5rem 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
   }
 
   .nav-toggle {
     display: block;
     color: #fff;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .hero-section {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
   }
 
   .hero-section .text {
     padding-left: 0;
     text-align: center;
+    margin-top: 1rem;
   }
 
   .links {
@@ -334,11 +341,22 @@ nav:hover {
     gap: 1rem;
   }
 
+  .skills-section {
+    padding: 2rem 1rem;
+  }
+
+  .education-section,
+  .projects-section,
+  .positions-section {
+    padding: 2rem 1rem;
+  }
+
   .education-item,
   .project-item,
   .position-item {
     flex-direction: column;
     align-items: flex-start;
+    text-align: left;
   }
 
   .education-right,
@@ -346,5 +364,10 @@ nav:hover {
   .position-header {
     text-align: left;
     margin-top: 0.5rem;
+  }
+
+  .cells {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
