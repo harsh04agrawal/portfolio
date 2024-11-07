@@ -1,33 +1,25 @@
 // Toggle mobile menu
 const navToggle = document.querySelector('.nav-toggle');
-const navLinksContainer = document.querySelector('nav');
 const navLinks = document.querySelectorAll('nav a');
 
 navToggle.addEventListener('click', () => {
-  navLinksContainer.classList.toggle('nav-open');
+  document.querySelector('nav').classList.toggle('nav-open');
 });
 
-// Close the mobile menu when a link is clicked
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    navLinksContainer.classList.remove('nav-open');
+    document.querySelector('nav').classList.remove('nav-open');
   });
 });
 
-// Smooth scrolling for internal links
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
 
     document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'  // Ensure scrolling starts at the top of the section
+      behavior: 'smooth'
     });
-
-    // Close the menu if it’s in mobile view
-    if (window.innerWidth <= 768) {
-      navLinksContainer.classList.remove('nav-open');
-    }
   });
 });
 
@@ -37,6 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastUpdatedDate = new Date(2024, 7, 23); // Month is 0-indexed (August is 7)
     const formattedDate = lastUpdatedDate.toLocaleDateString('en-GB');
     updateDateElement.textContent = formattedDate;
-});
+  });
 
   
