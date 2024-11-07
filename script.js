@@ -26,7 +26,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Script to dynamically update the Last Updated date
 document.addEventListener("DOMContentLoaded", function () {
     const updateDateElement = document.getElementById('update-date');
-    const lastUpdatedDate = new Date(2024, 7, 23); // Month is 0-indexed (August is 7)
+    const lastUpdatedDate = new Date(2024, 11, 7); 
     const formattedDate = lastUpdatedDate.toLocaleDateString('en-GB');
     updateDateElement.textContent = formattedDate;
   });
